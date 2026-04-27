@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
 
     swipe: {
         backgroundColor: '#F6F6F6',
-        borderRadius: 18,
+        borderRadius: 20,
         flexDirection: 'row',
         justifyContent: 'space-between',
         margin: 25,
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         padding: 10,
-        margin: 5,
-        borderRadius: 18
+        margin: 3,
+        borderRadius: 20
     }
 });
