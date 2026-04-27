@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     },
 
     body: {
-        margin: 25,
+        marginHorizontal: 25,
     },
 
     swipe: {
