@@ -14,7 +14,10 @@ export default function SignIn() {
                     Email
                 </Text>
                 <View style={styles.borderInput}>
-                    <Image source={require('@/assets/images/icon-email.png')} style={styles.icons} />
+                    <Image 
+                        source={require('@/assets/images/icon-email.png')}
+                        style={styles.icons} 
+                    />
                     <TextInput 
                         style={styles.textInput} 
                         placeholder="E-mail ou CPF..." 
@@ -28,14 +31,24 @@ export default function SignIn() {
                     Senha
                 </Text>
                 <View style={styles.borderInput}>
-                    <Image source={require('@/assets/images/icon-password.png')} style={styles.icons} />
+                        <Image 
+                            source={require('@/assets/images/icon-password.png')} 
+                            style={styles.icons} 
+                        />
                     <TextInput 
                         style={styles.textInput} 
                         placeholder="*********" 
-                        placeholderTextColor={'#818181'} 
+                        placeholderTextColor={'#818181'}
+                        secureTextEntry={!showPassword} 
                     />
-                    <TouchableOpacity style={styles.showPassword}>
-                        <Image source={require('@/assets/images/icon-eye.png')} style={styles.icons} />
+                    <TouchableOpacity 
+                        style={styles.showPassword} 
+                        onPress={() => setShowPassword(prev => !prev)}
+                    >
+                        <Image 
+                            source={require('@/assets/images/icon-eye.png')} 
+                            style={styles.icons} 
+                        />
                     </TouchableOpacity>
                 </View>  
             </View>
